@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+           
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/intro.html">About</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/project.html">Projects</a></li>
+                    <li><a href="/contact.html">Contact-Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="ham" src="ham.png" alt="hambar" width="23px">
+                <img class="cross" src="cross.png" alt="cross"width="23px">
+            </div>
+            <div id="about"><div class="contain">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="bhabya.jpeg" alt="bhabya">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>A learner who is looking forward to working in the IT world. Enthusiastic to learn new Technologies, want to learn the industry experience
+                        , gain new skills and technologies with at most dedication for the organisational and personal growth. I'm seeking for an entry level
+                        position with company to use my
+                        skills in coding and assisting in the
+                        timely completion of the projects.
+                    
+                        </p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')"><strong>Skills</strong></p>
+                                <p class="tab-links" onclick="opentab('education')"><strong>Education</strong></p>
+                                
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    
+                                    <li><span><strong>PROGRAMMING LANGUAGES</strong></span><br>
+                                    <ul type="bullet">
+                                        <li>C </li>
+                                        <li>Python</li>
+                                        <li>java</li>
+                                       <br>
+                                    </ul>
+                                    <li><span><strong>DEVELOPMENTS</strong></span><br>
+                                        <ul type="bullet">
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                            <li>React</li>
+                                            <br>
+                                        </ul>
+                                         </li>
+                                         <li><span><strong>TOOLS</strong></span><br>
+                                            <ul type="bullet">
+                                                <li>Visual Studio</li> 
+                                                <li>Atom</li>
+                                                <li>Android Studio</li>
+                                                <li>NetBeans</li>
+                                                <br>
+                                            </ul></li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    
+                                    <li><span><strong>M. S. Ramaiah University Of Applied Sciences</strong></span><br>
+                                        Bengaluru, Karnataka<br>
+                                        (2018-2022)<br>
+                                        <span>Bachelor of Technology 
+                                            (Computer Sciences)</span><br><br>
+                                        <strong>CGPA : 8.6</strong><br><br>
+                                        </li>
+
+                                        <li><span><strong>DAV Public School</strong></span><br>
+                                            Patna, Bihar<br>
+                                            (2017-2018)<br>
+                                            <span>Intermediate</span> 
+                                            (PCM)<br><br>
+                                            <strong>Percentage : 85%</strong><br><br>
+                                            </li>
+
+                                            <li><span><strong>DAV Public School</strong></span><br>
+                                                Patna, Bihar<br>
+                                                (2015-2016)<br>
+                                                <span>Xth Boards</span> <br><br>
+                                                <strong>CGPA : 10.0</strong><br>
+                                                </li>
+                                        
+                                        
+
+                                    
+                                         
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div></div>
+           
+        </div>
+        
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+
+<script src="script.js">
+        
+</script>
+</body>
+</html>
